@@ -1,2 +1,76 @@
 @import 'variables';
 
+body {
+    font-family: @roboto;
+}
+
+.container-fluid {
+    background-color: @yellow;
+    ul {
+        font-weight: @thickertext;
+        padding:  @marginbig 0;
+            :last-child {
+                color: @boborange;
+                text-transform: @uppercase;
+            }
+    }
+}
+
+.jumbotron {
+    height: @jumboheight;
+    background: url("@{images}banner-bg.png");
+        .btn-primary {
+            background-color: @yellow;
+            color: @fontgrey;
+            font-weight: @thickertext;
+            text-decoration: none;
+            padding: @buttonpadding;
+            text-transform: @uppercase;
+            border: none;
+            }
+    }
+
+
+    section {
+        margin: @marginbig 0;
+            article{
+                    h2 {
+                        font-weight: @thicktext;
+                        text-transform: @uppercase;
+                    }
+                        span {
+                            color: @boborange;
+                        }
+                            .lower {
+                                text-transform: @lowercase;
+                                color: inherit;
+                            }
+                     p {
+                         font-size: @size-16 ;
+                     }       
+                    .btn-secondary {
+                        background-color: @yellow;
+                        color: @fontgrey;
+                        font-weight: @thickertext;
+                        text-decoration: none;
+                        text-transform: @uppercase;
+                        border: none;
+                        padding: @buttonpadding;
+                        
+                    } 
+               }
+    }
+
+    footer.container-fluid{
+        border-top: 8px solid @yellow;
+        background-color: @sortofblack;
+    }  
+         
+     
+    //overlay
+    .overlay {
+        position: absolute ;
+        height: 100%;
+        width: 100%;
+        background-color: @imageoverlay;
+    }
